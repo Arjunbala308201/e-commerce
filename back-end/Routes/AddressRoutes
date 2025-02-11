@@ -1,0 +1,9 @@
+import express from 'express';
+import { addAddress, deleteAddressByid, getAddress } from '../controller/AdressController.js';
+
+const addressRouter = express.Router();
+addressRouter.get('/get/:userId',getAddress)
+addressRouter.post('/add/:userId', addAddress);
+addressRouter.delete('/delete/:id',deleteAddressByid)
+
+export default addressRouter;

@@ -1,0 +1,10 @@
+module.exports = {
+  content: [
+    "./src/**/*.{html,js,jsx,ts,tsx}", // Update this based on your project structure
+    "./public/index.html",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};

@@ -1,0 +1,51 @@
+[
+    {
+      "image": "http://localhost:4001/assets/ProductImages/toys/rctoy3.webp",
+      "name": "Hot Wheels RC Helicopter",
+      "brand": "Hot Wheels",
+      "model": "RC 11566",
+      "isStock": true,
+      "price": 4999,
+      "specialPrice": 4299,
+      "category": "toys",
+      "rating": 4.7,
+      "review": 12345
+    },
+    {
+      "image": "http://localhost:4001/assets/ProductImages/toys/doll1.webp",
+      "name": "Baby Doll",
+      "brand": "LEGO",
+      "model": "6345",
+      "isStock": true,
+      "price": 899,
+      "specialPrice": 799,
+      "category": "toys",
+      "rating": 4.7,
+      "review": 678
+    },
+    {
+      "image": "http://localhost:4001/assets/ProductImages/toys/doll2.jpeg",
+      "name": "Baby Doll",
+      "brand": "LEGO",
+      "model": "6345",
+      "isStock": true,
+      "price": 899,
+      "specialPrice": 799,
+      "category": "toys",
+      "rating": 4.7,
+      "review": 678
+    },
+    {
+      "image": "http://localhost:4001/assets/ProductImages/toys/doll3.jpeg",
+      "name": "Baby Doll",
+      "brand": "LEGO",
+      "model": "6345",
+      "isStock": true,
+      "price": 899,
+      "specialPrice": 799,
+      "category": "toys",
+      "rating": 4.7,
+      "review": 678
+    }
+  ]
+  

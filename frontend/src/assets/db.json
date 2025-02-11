@@ -1,0 +1,111 @@
+[
+  {
+       "image": "/assets/ProductImages/furnishings/bookshelf1.png",
+    "name": "Wooden Bookshelf",
+    "brand": "Ikea",
+    "model": "Classic Bookshelf",
+    "isStock": true,
+    "price": 7999,
+    "specialPrice": 7499,
+    "category": "furniture",
+    "rating": 4.7,
+    "review": 1023
+  },
+  {
+       "image": "/assets/ProductImages/furnishings/bookshelf2.png",
+    "name": "Metal Bookshelf",
+    "brand": "HomeCenter",
+    "model": "Industrial Shelf",
+    "isStock": false,
+    "price": 6499,
+    "specialPrice": 5999,
+    "category": "furniture",
+    "rating": 4.6,
+    "review": 853
+  },
+  {
+       "image": "/assets/ProductImages/furnishings/coffetable.png",
+    "name": "Glass Coffee Table",
+    "brand": "Urban Ladder",
+    "model": "Modern Glass Table",
+    "isStock": true,
+    "price": 10999,
+    "specialPrice": 9999,
+    "category": "furniture",
+    "rating": 4.8,
+    "review": 1147
+  },
+  {
+       "image": "/assets/ProductImages/furnishings/dresser1.png",
+    "name": "Wooden Dresser",
+    "brand": "Godrej Interio",
+    "model": "Classic Dresser",
+    "isStock": true,
+    "price": 15999,
+    "specialPrice": 14999,
+    "category": "furniture",
+    "rating": 4.5,
+    "review": 742
+  },
+  {
+       "image": "/assets/ProductImages/furnishings/dresser2.png",
+    "name": "Marble Dresser",
+    "brand": "Herman Miller",
+    "model": "Elegant Marble Dresser",
+    "isStock": true,
+    "price": 19999,
+    "specialPrice": 17999,
+    "category": "furniture",
+    "rating": 4.6,
+    "review": 589
+  },
+  {
+        "image": "/assets/ProductImages/furnishings/standinglamp1.png",
+    "name": "LED Standing Lamp",
+    "brand": "Philips",
+    "model": "Modern LED Lamp",
+    "isStock": true,
+    "price": 4999,
+    "specialPrice": 4499,
+    "category": "lighting",
+    "rating": 4.7,
+    "review": 3214
+  },
+  {
+
+    "image": "/assets/ProductImages/furnishings/standinglamp2.png",
+    "name": "Floor Standing Lamp",
+    "brand": "Crompton",
+    "model": "Classic Floor Lamp",
+    "isStock": true,
+    "price": 6999,
+    "specialPrice": 6499,
+    "category": "lighting",
+    "rating": 4.5,
+    "review": 2098
+  },
+  {
+        "image": "/assets/ProductImages/furnishings/tvstand1.png",
+    "name": "Wooden TV Stand",
+    "brand": "Hafele",
+    "model": "TV Stand 2025",
+    "isStock": true,
+    "price": 11999,
+    "specialPrice": 10999,
+    "category": "furniture",
+    "rating": 4.6,
+    "review": 1423
+  },
+  {
+        "image": "/assets/ProductImages/furnishings/tvstand2.png",
+    "name": "Modern TV Stand",
+    "brand": "Royaloak",
+    "model": "Modern Wooden TV Stand",
+    "isStock": false,
+    "price": 14999,
+    "specialPrice": 13999,
+    "category": "furniture",
+    "rating": 4.8,
+    "review": 3125
+  }
+]

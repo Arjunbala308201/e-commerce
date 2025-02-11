@@ -1,0 +1,47 @@
+/* src/index.css or src/App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "aos/dist/aos.css";
+.slider {
+	--totSlides: 7;
+	--slideWidth: 200px;
+	--slideHeight: 100px;
+	--animationSpeed: calc(2s * var(--totSlides));
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+	height: var(--slideHeight);
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.slider .slides-track {
+	animation: scroll var(--animationSpeed) linear infinite;
+	display: flex;
+	width: calc(var(--slideWidth) * var(--totSlides) * 2);
+}
+
+.slider .slide {
+	height: 100px;
+	width: var(--slideWidth);
+	filter: grayscale(100);
+	overflow: hidden;
+}
+
+.slider .slide img {
+	height: 100%;
+	width: auto;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(var(--slideWidth) * var(--totSlides) * -1));
+	}
+}
