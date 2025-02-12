@@ -24,7 +24,7 @@ export const Card = ({ productList, fetchFunction, isLogin, noBuy,isDate }) => {
 
   const addProductTocart = async (id) => {
     try {
-      const response = await axios.post(`http://localhost:4001/cart/add/${userId}`, { productId:id});
+      const response = await axios.post(`https://e-commerce-noec.onrender.com/cart/add/${userId}`, { productId:id});
       toast.success(response.data.message);
       fetchFunction();
     } catch (error) {

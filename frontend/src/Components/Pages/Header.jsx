@@ -26,7 +26,7 @@ export const Header = ({isLogin}) => {
     try {
       if(query.length >2){
         console.log('query',query)
-        const suggestions = await axios.get(`http://localhost:4001/products?search=${query}`)
+        const suggestions = await axios.get(`https://e-commerce-noec.onrender.com/products?search=${query}`)
         setProducts(suggestions.data)
       }
     } catch (error) {

@@ -27,7 +27,7 @@ export const Login = ({setIsLogin}) => {
         }else{
             try {   
                 console.log(userDetails,'will send ti api')
-                const response = await axios.post('http://localhost:4001/login',{userDetails})
+                const response = await axios.post('https://e-commerce-noec.onrender.com/login',{userDetails})
                 console.log(response.status,'status')
                 console.log(response.data.userDetails,'userDetals from response')
                 const userFromdb = response.data.userDetails

@@ -28,7 +28,7 @@ export const PaymentOptions = ({ product }) => {
     try {
       if(selectedOption){
         const orders = product.map(item => ({ product: item._id, userId: userId }));
-        const response = await axios.post(`http://localhost:4001/orders/add`,{orders:orders})
+        const response = await axios.post(`https://e-commerce-noec.onrender.com/orders/add`,{orders:orders})
         console.log(response.data.message)
         if(response.data.toast==='success'){
           toast.success(response.data.message)

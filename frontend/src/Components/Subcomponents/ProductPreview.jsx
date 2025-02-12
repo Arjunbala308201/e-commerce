@@ -15,7 +15,7 @@ export const ProductPreview = () => {
     const getSpecificProduct=async()=>{
         try {
           console.log('fetching function runs')
-          const specificProduct = await axios.get(`http://localhost:4001/products?search=${id}`)
+          const specificProduct = await axios.get(`https://e-commerce-noec.onrender.com/products?search=${id}`)
           console.log(specificProduct,'response')
           setProduct(specificProduct.data)
         } catch (error) {

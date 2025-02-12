@@ -13,7 +13,7 @@ const ProductCard = ({ productList, category}) => {
   const addTowishList = async (id) => {
     try {
       console.log(id,'form function')
-      const response = await axios.post(`http://localhost:4001/wishlist/add/${userId}`,{productId:id});
+      const response = await axios.post(`https://e-commerce-noec.onrender.com/wishlist/add/${userId}`,{productId:id});
       console.log(response.data); 
       if(response.data.toast==='warning'){
         toast.warning(response.data.message)

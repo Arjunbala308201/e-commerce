@@ -15,7 +15,7 @@ export const Cart = ({isLogin}) => {
 
     const getCartProducts = async()=>{
       try {
-        const response = await axios.get(`http://localhost:4001/cart/${userId}`)
+        const response = await axios.get(`https://e-commerce-noec.onrender.com/cart/${userId}`)
         console.log(response.data,'response frm api')
         setCartProduct(response.data)
       } catch (error) {

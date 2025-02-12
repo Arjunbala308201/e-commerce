@@ -25,7 +25,7 @@ export const Signup = () => {
         }else{
             try {   
                 console.log(userDetails,'will send to api')
-                const response = await axios.post('http://localhost:4001/signup',userDetails)
+                const response = await axios.post('https://e-commerce-noec.onrender.com/signup',userDetails)
                 console.log(response.status,'status')
                 console.log(response.data.toast,'toast')
                 if(response.data.toast==='warning'){toast.error(response.data.message)}

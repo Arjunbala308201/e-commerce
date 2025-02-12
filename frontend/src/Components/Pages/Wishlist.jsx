@@ -19,7 +19,7 @@ export const Wishlist = ({ isLogin }) => {
       if (!userId) return; // Fix: Avoid API call if userId is undefined
 
       const wishlistProducts = await axios.get(
-        `http://localhost:4001/wishlist/${userId}`
+        `https://e-commerce-noec.onrender.com/wishlist/${userId}`
       );
       const products = wishlistProducts.data;
       console.log(products, "response from API");

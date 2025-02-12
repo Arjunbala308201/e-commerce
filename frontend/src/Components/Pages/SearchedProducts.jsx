@@ -12,7 +12,7 @@ export const SearchedProducts = () => {
 
     const getSelectedCategory = async()=>{
       try {
-          const response = await axios.get(`http://localhost:4001/products?search=${searchQuery}`)
+          const response = await axios.get(`https://e-commerce-noec.onrender.com/products?search=${searchQuery}`)
           console.log(`category ${searchQuery}`,response)
           setProducts(response.data)
       } catch (error) {

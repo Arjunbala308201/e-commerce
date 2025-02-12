@@ -22,7 +22,7 @@ export const BuyNow = () => {
 
   const fetchProductsById = async () => {
     try {
-      const response = await axios.get(`http://localhost:4001/products?search=${productId}`);
+      const response = await axios.get(`https://e-commerce-noec.onrender.com/products?search=${productId}`);
       console.log("Product response:", response.data);
       setProduct(response.data);
       console.log(response.data,'specific product from function')

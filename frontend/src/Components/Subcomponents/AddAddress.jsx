@@ -37,7 +37,7 @@ export const AddAddress = ({ close, fetchAddress }) => {
   const addAddress = async (addressData) => {
     try {
       const response = await axios.post(
-        `http://localhost:4001/address/add/${userId}`,
+        `https://e-commerce-noec.onrender.com/address/add/${userId}`,
         addressData
       );
       toast.success(response.data.message);

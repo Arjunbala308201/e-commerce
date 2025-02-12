@@ -9,7 +9,7 @@ export const MyOrders = () => {
 
     const getMyOrders = async () => {
         try {
-            const response = await axios.get(`http://localhost:4001/orders/${userId}`);
+            const response = await axios.get(`https://e-commerce-noec.onrender.com/orders/${userId}`);
             setOrders(response.data.data);
             console.log(response.data.data,'response data')
         } catch (error) {

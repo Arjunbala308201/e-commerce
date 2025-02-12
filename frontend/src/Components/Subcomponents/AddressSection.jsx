@@ -13,7 +13,7 @@ export const AddressSection = ({id}) => {
 
   const getAddressById = async (id) => {
     try {
-      const response = await axios.get(`http://localhost:4001/address/get/${id}`);
+      const response = await axios.get(`https://e-commerce-noec.onrender.com/address/get/${id}`);
       setAddress(response.data.data);
       console.log(response.data.data,'address')
       // Set the first address as the selected address if available
