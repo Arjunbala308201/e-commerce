@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FaClock } from "react-icons/fa";
 import { FaMoneyBill, FaExchangeAlt } from "react-icons/fa";
 import { useSelector } from "react-redux";
@@ -13,7 +13,6 @@ export const PaymentOptions = ({ product }) => {
   const userId = useSelector((state) => state.user)._id;
   const [selectedOption, setSelectedOption] = useState(null);
   const [timer, setTimer] = useState(5 * 60); // 5 minutes countdown
-  const [order, setOrder] = useState([]);
 
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);

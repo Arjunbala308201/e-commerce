@@ -83,7 +83,7 @@ export const ProductPreview = () => {
             <span className="px-2 py-1 bg-red-500 text-white text-sm rounded-lg">
               New Launches
             </span>
-            <h1 className="text-xl font-bold">{product[0]?.brand} {product[0]?.name} {product[0]?.model} {product[0]?.category=='mobiles'?('8 GB Ram'):('')}</h1>
+            <h1 className="text-xl font-bold">{product[0]?.brand} {product[0]?.name} {product[0]?.model} {product[0]?.category==='mobiles'?('8 GB Ram'):('')}</h1>
           </div>
 
           {/* Ratings */}

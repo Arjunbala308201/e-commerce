@@ -50,7 +50,7 @@ export const Card = ({ productList, fetchFunction, isLogin, noBuy,isDate }) => {
   const deleteFromcart = async (id) => {
     try {
       console.log(id,'need to dlt')
-      const deletedProduct = await axios.delete(`http://localhost:4001/cart/delete/${userId}/${id}`);
+      await axios.delete(`http://localhost:4001/cart/delete/${userId}/${id}`);
       toast.success('Product Deleted');
       fetchFunction();
     } catch (error) {
@@ -61,7 +61,7 @@ export const Card = ({ productList, fetchFunction, isLogin, noBuy,isDate }) => {
 
   const deleteFromWishlist = async (id) => {
     try {
-      const deletedProduct = await axios.delete(`http://localhost:4001/wishlist/delete/${userId}/${id}`);
+      await axios.delete(`http://localhost:4001/wishlist/delete/${userId}/${id}`);
       toast.success('Product Deleted');
       fetchFunction();
     } catch (error) {

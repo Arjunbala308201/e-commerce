@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import profile from '../../assets/Recommendations/electronics/monitor.jpeg'
 export const Notification = () => {
   return (
-    <div className="flex flex-col w-[400px] bg-white z-10 text-gray-500 shadow-lg">
+    <div className="flex flex-col w-[400px] bg-white text-gray-500 shadow-lg">
                 <div className="block px-4 py-2 font-medium text-center text-gray-200 rounded-t-lg bg-blue-500 ">
                   Notifications
                 </div>

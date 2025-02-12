@@ -27,7 +27,7 @@ export const ProfileTooltip = () => {
   const navigate = useNavigate()
   return (
     <>
-        <div className="flex flex-col bg-white z-40 text-gray-500 text-semibold shadow-lg w-[200px] rounded-md ">
+        <div className="flex flex-col bg-white z-50 text-gray-500 text-semibold shadow-lg w-[200px] rounded-md ">
             <Link className='hover:bg-gray-300 p-2 flex gap-3 items-center '><CgProfile /> My Info</Link>
             <Link className='hover:bg-gray-300 p-2 flex gap-3 items-center 'to={`/outlet/orders/${userId}`}><GoPackageDependencies />My Orders</Link>
             <Link to='/outlet/wishlist/flipkart' className='hover:bg-gray-300 p-2 flex gap-3 items-center '><CiHeart /> Wishlist</Link>

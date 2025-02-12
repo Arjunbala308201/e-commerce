@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React from "react";
 import { toast } from "react-toastify";
 import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";

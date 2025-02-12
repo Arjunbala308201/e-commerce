@@ -44,12 +44,12 @@ export const BuyNow = () => {
 
   useEffect(() => {
     getCartProducts(userId);
-    if (productId) fetchProductsById();
-  }, [userId, productId]); // ✅ Dependencies added
+    if (productId) {fetchProductsById();}
+  }, [userId, productId]); 
 
   useEffect(() => {
-    console.log("Updated cart items:", cartItems); // ✅ Logs the correct updated state
-  }, [cartItems]); // ✅ Runs when cartItems updates
+    console.log("Updated cart items:", cartItems); 
+  }, [cartItems]);
 
   const extracted = cartItems.map(item =>item.product)
 console.log(extracted,'extracted cartitems')

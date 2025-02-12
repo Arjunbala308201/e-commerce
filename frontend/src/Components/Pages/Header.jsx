@@ -68,7 +68,7 @@ export const Header = ({isLogin}) => {
                 
                 <div className="flex h-full">
                   <FaSearch className='h-[30px]] w-[30px] text-gray-400 mr-2'  />
-                  <img src= {item.image} className='object-contain h-[30px] w-[30px]' />
+                  <img src= {item.image} className='object-contain h-[30px] w-[30px]' alt='product image'/>
                 </div>
                 <div  className="w-full text-start ps-3 hover:bg-gray-100 cursor-pointer text-gray-800">{item.brand} {item.name}</div >
                 </div>
@@ -76,7 +76,7 @@ export const Header = ({isLogin}) => {
             ))}
           </div>
         </div>
-        <div className="flex justify-end md:gap-10 w-1/2">
+        <div className="flex justify-end md:gap-5 lg:gap-10 w-1/2">
           <button
           onClick={navigateTologin}
           className=" group flex gap-1 sm:gap-2 items-center rounded-lg border-0 hover:bg-blue-600 hover:text-white p-2 transition-all relative"
@@ -87,7 +87,7 @@ export const Header = ({isLogin}) => {
 
           {/* Tooltip - Will only be visible on hover, and not affect button height */}
           <div className="absolute w- left-0 top-full pt-4  hidden group-hover:block transition-opacity duration-300 z-10">
-            <div className="">
+            <div className="z-30">
             {isLogin&&<ProfileTooltip />}
             </div>
           </div>
@@ -126,7 +126,7 @@ export const Header = ({isLogin}) => {
                 
                 <div className="flex h-full">
                   <FaSearch className='h-[30px]] w-[30px] text-gray-400 mr-2'  />
-                  <img src= {item.image} className='object-contain h-[30px] w-[30px]' />
+                  <img src= {item.image} className='object-contain h-[30px] w-[30px]' alt='product image'/>
                 </div>
                 <div  className="w-full text-start ps-3 hover:bg-gray-100 cursor-pointer text-gray-800">{item.brand} {item.name}</div >
                 </div>

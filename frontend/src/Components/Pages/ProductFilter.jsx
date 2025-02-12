@@ -4,7 +4,6 @@ import bike from '../../assets/LinkImages/bike.webp'
 import dolls from '../../assets/LinkImages/dolls.png'
 import electronics from '../../assets/LinkImages/electronics.jpg'
 import fashion from '../../assets/LinkImages/fashion.png'
-import flight from '../../assets/LinkImages/flight.webp'
 import groceries from '../../assets/LinkImages/grocerries.webp'
 import furniture from '../../assets/LinkImages/home furnishings.jpg'
 import mobiles from '../../assets/LinkImages/mobiles.jpeg'
@@ -56,10 +55,10 @@ export const ProductFilter = () => {
         to={`/outlet/${data.path}`} 
         className="flex flex-col items-center group transition-all"
       >
-        <div className="flex justify-center">
+        <div className="flex justify-center overflow-hidden">
           <img src={data.img} alt="" className="h-12 w-12 sm:h-16 sm:w-16 object-contain group-hover:scale-125 transition-all"/>
         </div>
-        <div className="w-full font-semibold text-center text-xs sm:text-md">{data.text}</div>
+        <div className="w-full font-semibold text-center text-xs sm:text-md  bg-white">{data.text}</div>
       </Link>
     ))}
   </div>

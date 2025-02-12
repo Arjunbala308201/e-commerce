@@ -16,10 +16,9 @@ import homedecor from '../../assets/Recommendations/sports/home decorations.jpeg
 import keyboard from '..//../assets//Recommendations/sports/keyboard.jpg'
 import rctoys from '../../assets/Recommendations/sports/rctoys.jpeg'
 import { useSelector } from 'react-redux'
-import { useLocation } from 'react-router-dom'
 
 export const Home = () => {
-  const location = useLocation()
+
   const[isLogin,setIslogin] = useState(false)
   const user = useSelector((state)=>state.user)
   const userID = user._id
