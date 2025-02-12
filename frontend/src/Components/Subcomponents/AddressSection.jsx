@@ -51,10 +51,10 @@ export const AddressSection = ({id}) => {
 
   return (
     <div className="mb-4">
-    <div className="bg-gray-100 p-4">
+    <div className="bg-gray-100 sm:p-4">
       {address.length > 0 ? (
         address.map((addr) => (
-          <label key={addr._id} id="address" className="flex items-start gap-3 p-3 border-b cursor-pointer">
+          <label key={addr._id} id="address" className="flex items-start gap-3 p-1 sm:p-3 border-b cursor-pointer">
             <input
               type="radio"
               className="mt-1 accent-blue-600"
@@ -62,17 +62,17 @@ export const AddressSection = ({id}) => {
               checked={selectedAddress?._id === addr._id}
               id="address"
             />
-            <div className="w-full">
+            <div className="w-full text-xs">
               <div className="flex justify-between">
                 <span className="font-semibold">{addr.name}</span>
-                <button className="text-blue-600 text-sm" onClick={() => deleteAddress(addr._id)}>
+                <button className="text-blue-600 text-[8px]" onClick={() => deleteAddress(addr._id)}>
                   Delete
                 </button>
               </div>
-              <p className="text-sm text-gray-600">{addr.phone}</p>
-              <p className="text-sm text-gray-600">{addr.address}</p>
+              <p className="text-sm text-gray-600 text-[10px]">{addr.phone}</p>
+              <p className="text-sm text-gray-600 text-[9px]">{addr.address}</p>
               {selectedAddress?._id === addr._id && (
-                <button className="mt-3 bg-orange-500 text-white px-4 py-2 rounded-md w-full">
+                <button className="mt-3 bg-orange-500 text-white px-4 py-1 sm:py-2 rounded-md w-full">
                   DELIVER HERE
                 </button>
               )}

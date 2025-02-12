@@ -24,18 +24,18 @@ export const EmiOptions = () => {
   ]);
 
   return (
-    <div className="p-4 bg-white shadow-md rounded-md">
+    <div className=" p-1 sm:p-4 bg-white shadow-md rounded-md">
       <div className="space-y-4">
         {offers.map((offer) => (
-          <div key={offer.id} className="flex items-center justify-between p-3 border-b">
-            <div className="flex items-center gap-3">
+          <div key={offer.id} className="flex items-center justify-between p-1 sm:p-3 border-b">
+            <div className="flex items-center gap-1 sm:gap-3">
                 <div className="w-1/5">
-              <FaTag className='w-8 h-8 text-green-700'/>
+              <FaTag className='h-4 w-4 sm:w-8 sm:h-8 text-green-700'/>
               </div>
-              <span className="text-gray-800 font-medium">{offer.title}</span>
+              <span className="text-gray-800 font-medium sm:text-lg text-xs">{offer.title}</span>
             </div>
             <a href={offer.link} className="text-blue-600 hover:underline">
-              <span className="text-sm">View</span>
+              <span className="sm:text-sm text-xs">View</span>
             </a>
           </div>
         ))}

@@ -54,19 +54,19 @@ export const Login = ({setIsLogin}) => {
 
   return (
     <>
-    <div className="flwx w-full h-screen py-10 bg-gray-100">
-        <div className="flex w-2/3 mx-auto h-4/5 ">
-            <div className="w-2/5 bg-blue-500 text-white p-10 justify-between flex flex-col">
+    <div className="flwx w-full sm:h-screen py-10 bg-gray-100">
+        <div className="flex w-full px-2 sm:px-0 md:w-2/3 mx-auto h-4/5 ">
+            <div className="w-2/5 bg-blue-500 text-white p-2 md:p-10 justify-between flex flex-col">
             <div className="">
-                <div className="text-3xl font-semibold ">Login</div>
+                <div className="text-lg md:text-3xl font-semibold ">Login</div>
                 <br />
-                <p className=''>Get access to your Orders, Wishlist and Recommendations</p>
+                <p className='text-xs sm:sm'>Get access to your Orders, Wishlist and Recommendations</p>
                 </div>
                 <div className="w-full">
                 <img src={loginImg} alt="" className='w-2/3 mx-auto' />
                 </div>
             </div>
-            <div className="w-3/5 p-5 h-full bg-white flex flex-col justify-between">
+            <div className="w-3/5 p-3 sm:p-5 h-full bg-white flex flex-col justify-between">
                 <div className="w-full">
 
                             <input type="mail" 
@@ -85,15 +85,15 @@ export const Login = ({setIsLogin}) => {
                             />
 
                     <br />
-                    <p className='text-gray-500 text-sm font-medium mt-2'>By continuing, you agree to Flipkart's <span className='text-blue-500'>Terms of Use</span> and <span className='text-blue-500'>Privacy Policy</span>.</p>
-                    <button className="bg-[#fb641b] text-white w-full text-center py-2 mt-5 hover:bg-[#fb661bcd]"
+                    <p className='text-gray-500 text-[9px] sm:text-sm font-medium mt-2'>By continuing, you agree to Flipkart's <span className='text-blue-500'>Terms of Use</span> and <span className='text-blue-500'>Privacy Policy</span>.</p>
+                    <button className="bg-[#fb641b] text-white w-full text-center py-1 sm:py-2 mt-5 hover:bg-[#fb661bcd]"
                     onClick={loginToaccount}>
                         Login
                     </button>
                 </div>
 
-                <div className="w-full flex justify-center items-center">
-                <Link to='/outlet/signup' className= ' text-blue-500'>New to Flipkart? Create an account</Link>
+                <div className="w-full flex justify-center items-center mt-2">
+                <Link to='/outlet/signup' className= 'text-xs sm:text-sm text-blue-500'>New to Flipkart? Create an account</Link>
                 </div>
             </div>
             

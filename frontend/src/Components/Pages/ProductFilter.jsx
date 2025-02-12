@@ -37,10 +37,6 @@ export const ProductFilter = () => {
             path:'appliances',
             text:'Appliances'
         },{
-            img:flight,
-            path:'flight',
-            text:'Flight Bookings'
-        },{
             img:dolls,
             path:'toys',
             text:'Toys & More'
@@ -52,18 +48,23 @@ export const ProductFilter = () => {
     ]
   return (
     <>
-        <div className="flex bg-white w-full justify-around py-5 px-10 ">
-            {
-                dataTomap.map((data,index)=>(
-                    <Link  key={index} to={`/outlet/${data.path}`} className="flex flex-col w-full h-full group transition-all" >
-                        <div className="flex justify-center">
-                            <img src={data.img} alt="" className='h-16 w-16 object-contain group-hover:scale-125 transition-all'/>
-                        </div>
-                        <div className='w-full font-semibold text-center '>{data.text}</div>
-                    </Link>
-                )) 
-            }
+<div className="bg-white w-full py-5 px-4 sm:px-10">
+  <div className="grid grid-cols-4 sm:grid-cols-8 gap-4">
+    {dataTomap.map((data, index) => (
+      <Link 
+        key={index} 
+        to={`/outlet/${data.path}`} 
+        className="flex flex-col items-center group transition-all"
+      >
+        <div className="flex justify-center">
+          <img src={data.img} alt="" className="h-12 w-12 sm:h-16 sm:w-16 object-contain group-hover:scale-125 transition-all"/>
         </div>
+        <div className="w-full font-semibold text-center text-xs sm:text-md">{data.text}</div>
+      </Link>
+    ))}
+  </div>
+</div>
+
     </>
   )
 }

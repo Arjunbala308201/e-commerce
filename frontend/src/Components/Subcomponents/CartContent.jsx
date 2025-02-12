@@ -25,7 +25,7 @@ export const CartContent = ({ isLogin }) => {
     return (
         <>
             {isLogin ? (
-                <div className={`flex w-full bg-white py-10`}>
+                <div className={`flex w-full bg-white`}>
                     <div className="flex flex-col w-full h-full ">
                         {groceriesPath ? (
                             <div className="w-full flex flex-col justify-center items-center gap-2">

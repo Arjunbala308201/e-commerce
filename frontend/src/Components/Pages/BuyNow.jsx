@@ -56,19 +56,17 @@ console.log(extracted,'extracted cartitems')
 console.log(cartItems,'unextracted')
   return (
     <div className="flex w-full">
-      <div className="p-4 bg-white shadow-md rounded-md w-[70%]">
+      <div className="p-2 sm:p-4 bg-white shadow-md rounded-md w-[65%]">
         {/* Step 1: Login */}
         <div className="border-b pb-4 mb-4">
           <h2 className="text-lg font-semibold text-gray-800 flex justify-between">
             <span>
-              Login
+             <div className="text-sm sm:text-lg flex">Login
               <input type="checkbox" checked={!!userId} disabled className="ml-2" />
+              </div>
             </span>
-            <button className="text-blue-600 hover:underline">CHANGE</button>
+            <button className="text-blue-600 hover:underline text-xs sm:text-lg">CHANGE</button>
           </h2>
-          <p className="text-gray-600">
-            Flipkart Customer <span className="font-medium">+91 8778799891</span>
-          </p>
         </div>
 
         <AddressSection />
@@ -78,7 +76,7 @@ console.log(cartItems,'unextracted')
           className="border-t pt-4 cursor-pointer hover:bg-gray-100 flex justify-between"
           onClick={() => setIsOpenPreview(!isOpenPreview)}
         >
-          <h2 className="text-lg font-semibold text-gray-600">3 ORDER SUMMARY</h2>
+          <h2 className="text-xs sm:text-lg font-semibold text-gray-600">3 ORDER SUMMARY</h2>
           <FaChevronDown className={`transition-all transform ${isOpenPreview ? "rotate-180" : ""}`} />
         </div>
 
@@ -87,17 +85,17 @@ console.log(cartItems,'unextracted')
         {/* Step 4: Payments */}
         <div className="border-t pt-4 mt-2 hover:bg-gray-100" onClick={() => setOpenPayment(!openPayment)}>
           <div className="flex justify-between">
-            <h2 className="text-lg font-semibold text-gray-600">4 PAYMENTS</h2>
+            <h2 className="text-xs sm:text-lg font-semibold text-gray-600">4 PAYMENTS</h2>
             <FaChevronDown className={`transition-all transform ${openPayment ? "rotate-180" : ""}`} />
           </div>
         </div>
 
-        <div>{openPayment && <> <div className="">Paymentoption</div>
+        <div>{openPayment && <> <div className="text-xs sm:text-lg">Paymentoption</div>
           <PaymentOptions  product={productId ? product : extracted} />
         </> }</div>
 
         {/* Back Button */}
-        <div className="w-full px-20 flex justify-center mt-4">
+        <div className="w-full text-xs sm:text-sm px-10 sm:px-20 flex justify-center mt-4">
           <button
             className="w-full rounded-lg py-2 bg-red-500 font-semibold text-white rounded-md hover:bg-red-600"
             onClick={() => navigate(-1)}
@@ -107,7 +105,7 @@ console.log(cartItems,'unextracted')
         </div>
       </div>
 
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 w-[35%]">
         <PriceCard Items={productId ? product : extracted} noByuAllbtn={true} />
       </div>
     </div>

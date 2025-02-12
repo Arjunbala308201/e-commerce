@@ -49,22 +49,22 @@ export const PaymentOptions = ({ product }) => {
   return (
     <div className="mx-auto bg-white rounded-md">
       {/* Timer */}Timer
-      <div className="bg-yellow-100 p-3 text-sm text-gray-800 flex items-center justify-between">
+      <div className="bg-yellow-100 p-1 sm:p-3 text-sm text-gray-800 flex items-center justify-between">
         <span>Complete payment in</span>
         <div className="flex items-center gap-2">
           <FaClock className="text-red-500" />
-          <span className="font-bold">{formatTime(timer)}</span>
+          <span className="text-xs sm:text-sm font-bold">{formatTime(timer)}</span>
         </div>
       </div>
 
-      <div className="bg-gray-50 p-4">
+      <div className="bg-gray-50 p-2 md:p-4">
         {paymentMethods.map((method) => (
-          <label key={method.id} className="flex items-center justify-between p-3 border-b cursor-pointer hover:bg-gray-100">
+          <label key={method.id} className="flex items-center justify-between p-1 sm:p-3 border-b cursor-pointer hover:bg-gray-100">
             <div className="flex items-center gap-3">
               <div className="text-purple-600 text-xl">{method.icon}</div>
               <div>
-                <span className="font-medium">{method.name}</span>
-                <p className="text-sm text-gray-600">{method.description}</p>
+                <span className="font-medium text-xs sm:text-sm">{method.name}</span>
+                <p className="text-sm text-gray-600 text-[8px] sm:text-sm">{method.description}</p>
               </div>
             </div>
             <input
@@ -79,15 +79,15 @@ export const PaymentOptions = ({ product }) => {
       </div>
 
       {/* Add Gift Card */}
-      <div className="p-3 text-blue-600 font-semibold border-t cursor-pointer hover:bg-gray-100 flex items-center gap-2">
+      <div className="sm:p-3 p-1 text-blue-600 font-semibold border-t cursor-pointer hover:bg-gray-100 flex items-center gap-2">
         <FaGift />
-        <span>Add Gift Card</span>
+        <span className="sm:text-sm text-xs">Add Gift Card</span>
       </div>
 
       {/* Continue Button */}
-      <div className="px-20 flex justify-center">
+      <div className="md:px-20 px-10 flex justify-center">
         <button
-          className="w-full bg-orange-500 text-white font-semibold py-2 rounded-md hover:bg-orange-600"
+          className="w-full bg-orange-500 px-2 text-white font-semibold py-2 text-xs sm:text-sm rounded-md hover:bg-orange-600"
           onClick={placeOrder}
         >
           {selectedOption ? ('PLACE ORDER') : ('CONTINUE')}

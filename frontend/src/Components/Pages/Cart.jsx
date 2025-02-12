@@ -39,11 +39,11 @@ export const Cart = ({isLogin}) => {
     console.log(cartItems, 'Extracted Cart Items');
     console.log(cartProducts,'cartptrofucr')
   return (
-    <div className="flex flex-col min-h-screen h-full bg-gray-100 gap-3 container mx-auto ">
+    <div className="flex flex-col min-h-screen h-full bg-gray-100 sm:gap-3 container mx-auto ">
         {/* navigation */}
-        <div className="w-full flex gap-5">
+        <div className="w-full flex gap-1 sm:gap-5">
           <div className={`${isLogin ?('w-[70%]'):('w-full')}`}>
-            <div className="flex bg-white gap-10 h-16 ">
+            <div className="flex bg-white gap-10 h-10 sm:h-16 ">
                 <div className="flex w-1/2 h-full justify-center items-center">
                     <Link to='/outlet/cart/flipkart' className={`hover:text-blue-600 w-1/2 h-full flex justify-center items-center border-b-2 border-b-transparent
                        ${currentLocation==='/outlet/cart/flipkart'?('!border-b-blue-600 text-blue-600 font-semibold'):('')}`}>Flipkart</Link>
@@ -64,28 +64,28 @@ export const Cart = ({isLogin}) => {
           </div>}
         </div>
       {/* Footer */}
-      <footer className=" py-6 text-gray-600 text-sm">
-        <div className="container mx-auto px-6">
-          <div className="flex justify-between items-center">
-            <div className="flex">
-              <span className="mr-2">Policies:</span>
+      <footer className=" py-6 text-gray-600 text-xs sm:text-sm">
+        <div className="container mx-auto px-2 sm:px-6">
+          <div className="flex justify-between items-start h-20 text-[10px] sm:text-sm">
+            <div className="flex gap-1 sm:gap-2">
+              <span className="sm:mr-2">Policies:</span>
               <div className="text-blue-600 hover:underline">
                 Returns Policy
               </div>
-              <span className="mx-2">|</span>
+              <span className="sm:">|</span>
               <div className="text-blue-600 hover:underline">
                 Terms of use
               </div>
-              <span className="mx-2">|</span>
+              <span className="sm:">|</span>
               <div className="text-blue-600 hover:underline">
                 Security
               </div>
-              <span className="mx-2">|</span>
+              <span className="sm:">|</span>
               <div className="text-blue-600 hover:underline">
                 Privacy
               </div>
             </div>
-            <div>© 2007-2025 Flipkart.com</div>
+            <div className="h-full flex justify-end ps-3 items-start text-end">007-2025 Flipkart.com</div>
           </div>
           <div className="mt-4 text-center">
             Need help? Visit the{" "}

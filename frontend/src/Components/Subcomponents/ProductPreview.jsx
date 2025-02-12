@@ -128,19 +128,19 @@ export const ProductPreview = () => {
           </div>
 
           {/* Actions */}
-          <div className="flex justify-between mt-4">
-          <div className="flex gap-4">
-            <button className="px-6 py-2 bg-orange-500 font-semibold text-white rounded-sm hover:bg-orange-600"
+          <div className="flex justify-between mt-4 text-xs sm:text-sm">
+          <div className="flex gap-4 ">
+            <button className="px-2 md:px-6 py-2 bg-orange-500 font-semibold text-white rounded-sm hover:bg-orange-600"
             onClick={()=>handleAddToCart(product[0]._id)} >
               Add to Cart
             </button>
             <button onClick={()=>handleNavigate(product[0]._id)} 
-             className="px-6 py-2 bg-green-500 font-semibold text-white rounded-sm hover:bg-green-600">
+             className="px-2 md:px-6 py-2 bg-green-500 font-semibold text-white rounded-sm hover:bg-green-600">
               Buy Now
             </button>
           </div>
           <Link onClick={goBack}
-           className="px-6 py-2 bg-red-500 font-semibold text-white  rounded-sm hover:bg-red-600">
+           className="px-2 md:px-6 py-2 bg-red-500 font-semibold text-white  rounded-sm hover:bg-red-600">
               Back
           </Link>
 

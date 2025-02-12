@@ -49,9 +49,9 @@ export const Wishlist = ({ isLogin }) => {
 
   return (
     <>
-      <div className="w-full flex gap-5 min-h-screen">
-        <div className={`${isWishlist ? "w-[70%]" : "w-full"}`}>
-          <div className="flex bg-white gap-10 h-16">
+      <div className="w-full flex gap-1 sm:gap-5 min-h-screen">
+        <div className={`${isWishlist ? "w-[65%]" : "w-full"}`}>
+          <div className="flex bg-white gap-10 h-10 sm:h-16">
             <div className="flex w-1/2 h-full justify-center items-center">
               <Link
                 to="/outlet/wishlist/flipkart"
@@ -85,7 +85,7 @@ export const Wishlist = ({ isLogin }) => {
           </div>
         </div>
         {isWishlist && (
-          <div className="flex flex-col w-[30%]">
+          <div className="flex flex-col w-[35%]">
             {console.log(isLogin)}
             {isLogin ? (
               <PriceCard Items={wishlistItems.length > 0 ? wishlistItems : []} />

@@ -49,13 +49,13 @@ export const Carousel = () => {
       <div className="w-full mx-auto relative">
         <Slider {...settings}>
           <div>
-            <img src={carosel1} alt="Carosel 1" className="object-cover w-full h-64 mx-auto" />
+            <img src={carosel1} alt="Carosel 1" className="object-cover w-full h-32 sm:h-64 mx-auto" />
           </div>
           <div>
-            <img src={carosel2} alt="Carosel 2" className="object-cover w-full h-64 mx-auto" />
+            <img src={carosel2} alt="Carosel 2" className="object-cover w-full h-32 sm:h-64 mx-auto" />
           </div>
           <div>
-            <img src={carosal4} alt="Carosel 3" className="object-cover w-full h-64 mx-auto" />
+            <img src={carosal4} alt="Carosel 3" className="object-cover w-full h-32 sm:h-64 mx-auto" />
           </div>
         </Slider>
       </div>
