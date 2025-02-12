@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cors())
 app.use("/src", express.static("src"));
 const port = process.env.PORT;
-const dburl = process.env.mongo_url; 
+const dburl = process.env.MONGO_URL; 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
